@@ -48,4 +48,10 @@ dependencies = [
     "langchain-ollama>=1.0.0",
     "langchain-anthropic>=1.0.1",
     "langchain-experimental>=0.0.42",
+    "kokoro>=0.9.4",
+    "soundfile>=0.13.1",
+    "en-core-web-sm",
 ]
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0.tar.gz" }
