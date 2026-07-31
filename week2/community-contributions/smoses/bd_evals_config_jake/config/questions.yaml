@@ -1,0 +1,189 @@
+# Generated from smoses/sample_questions.json. Question text preserved verbatim.
+schema_version: 1
+questions:
+- id: q001
+  question: What are the diagnostic criteria for major depressive disorder?
+- id: q002
+  question: Describe the initial management steps for a patient presenting with acute ischemic stroke.
+- id: q003
+  question: What is the recommended first-line treatment for community-acquired pneumonia in adults?
+- id: q004
+  question: List the common contraindications to beta blocker therapy.
+- id: q005
+  question: What is the typical dosing regimen of amoxicillin for pediatric acute otitis media?
+- id: q006
+  question: Outline the criteria for diagnosis of type 2 diabetes mellitus.
+- id: q007
+  question: What are the key features distinguishing ulcerative colitis from Crohn's disease?
+- id: q008
+  question: Describe the approach to management of exacerbation of chronic obstructive pulmonary disease
+    (COPD).
+- id: q009
+  question: What are the indications for starting statin therapy in primary prevention of cardiovascular
+    disease?
+- id: q010
+  question: List the common causes of microcytic anemia.
+- id: q011
+  question: How is hyperthyroidism diagnosed clinically and with lab testing?
+- id: q012
+  question: What is the first-line treatment for anaphylaxis?
+- id: q013
+  question: What is the recommended post-exposure prophylaxis for HIV after needle-stick injury?
+- id: q014
+  question: Outline the vaccination schedule for the hepatitis B vaccine in adults.
+- id: q015
+  question: What are the diagnostic criteria for rheumatoid arthritis?
+- id: q016
+  question: Describe the typical presentation and management of benign paroxysmal positional vertigo (BPPV).
+- id: q017
+  question: What is the treatment of choice for uncomplicated urinary tract infection in women?
+- id: q018
+  question: List the clinical features and diagnostic tests used in acute appendicitis.
+- id: q019
+  question: What is the management of newly diagnosed hypertension according to current guidelines?
+- id: q020
+  question: Describe the treatment options for atrial fibrillation with rapid ventricular response.
+- id: q021
+  question: What laboratory abnormalities are common in iron deficiency anemia?
+- id: q022
+  question: What is the recommended treatment for Lyme disease in adults?
+- id: q023
+  question: List risk factors for developing deep vein thrombosis (DVT).
+- id: q024
+  question: Outline the emergency management of status epilepticus.
+- id: q025
+  question: What are the signs and symptoms of congestive heart failure?
+- id: q026
+  question: What is the standard antibiotic regimen for treatment of bacterial sinusitis?
+- id: q027
+  question: Describe counseling points and precautions for prescribing isotretinoin.
+- id: q028
+  question: What are the diagnostic criteria and initial management of acute pancreatitis?
+- id: q029
+  question: List causes of secondary hypertension.
+- id: q030
+  question: What are the common side effects of ACE inhibitors?
+- id: q031
+  question: Describe the clinical features and treatment of herpes zoster.
+- id: q032
+  question: What is the recommended therapy for outpatient treatment of community-acquired pneumonia in
+    a healthy adult?
+- id: q033
+  question: Outline the evaluation and management of suspected pulmonary embolism.
+- id: q034
+  question: What are the primary prevention strategies for osteoporosis?
+- id: q035
+  question: What is the typical presentation and management of acute gout flare?
+- id: q036
+  question: List the common causes of macrocytic anemia.
+- id: q037
+  question: Describe initial assessment and management of a patient with chronic stable angina.
+- id: q038
+  question: What is the first-line treatment for generalized tonic-clonic seizures?
+- id: q039
+  question: Outline the treatment approach for mild to moderate atopic dermatitis.
+- id: q040
+  question: What are clinical features suggestive of myocardial infarction in women?
+- id: q041
+  question: List the diagnostic criteria for systemic lupus erythematosus (SLE).
+- id: q042
+  question: What is the management of asymptomatic bacteriuria in pregnancy?
+- id: q043
+  question: Describe the clinical presentation and treatment of cellulitis.
+- id: q044
+  question: What is the initial management of acute asthma exacerbation in children?
+- id: q045
+  question: List the contraindications to use of oral contraceptive pills.
+- id: q046
+  question: What are the characteristics and management of iron deficiency anemia in pregnancy?
+- id: q047
+  question: Outline the approach to a patient with suspected peptic ulcer disease.
+- id: q048
+  question: What is the recommended treatment for latent tuberculosis infection?
+- id: q049
+  question: Describe indications and dosing for subcutaneous heparin for venous thromboembolism prophylaxis.
+- id: q050
+  question: What are the diagnostic criteria for metabolic syndrome?
+- id: q051
+  question: What is the management of Bell's palsy?
+- id: q052
+  question: List causes of secondary amenorrhea.
+- id: q053
+  question: Describe the common causes and treatment of acute bacterial prostatitis.
+- id: q054
+  question: What are the recommended guidelines for colorectal cancer screening?
+- id: q055
+  question: Outline the clinical features and management of hypothyroidism.
+- id: q056
+  question: What is the standard treatment for Clostridium difficile infection?
+- id: q057
+  question: List common causes of acute pancreatitis.
+- id: q058
+  question: Describe the evaluation and management of first-time seizure in an adult.
+- id: q059
+  question: What is the recommended management of acute otitis media in children under 2 years old?
+- id: q060
+  question: What are the typical presenting signs of Parkinson's disease?
+- id: q061
+  question: Outline treatment options for allergic rhinitis.
+- id: q062
+  question: List clinical features of congestive heart failure due to left ventricular dysfunction.
+- id: q063
+  question: What is the typical adult dosing schedule for influenza vaccination?
+- id: q064
+  question: Describe management of chronic stable angina including lifestyle and pharmacologic therapy.
+- id: q065
+  question: What are causes and management of neutropenic fever in cancer patients?
+- id: q066
+  question: What are the diagnostic criteria for attention-deficit/hyperactivity disorder (ADHD) in children?
+- id: q067
+  question: Outline the initial workup and management of hypercalcemia.
+- id: q068
+  question: What are the common features and treatment options for irritable bowel syndrome?
+- id: q069
+  question: Describe the approach to management of localized basal cell carcinoma.
+- id: q070
+  question: List the indications and contraindications for use of benzodiazepines.
+- id: q071
+  question: What is the recommended treatment for community-acquired methicillin-resistant Staphylococcus
+    aureus (MRSA) skin infections?
+- id: q072
+  question: Outline first-line treatments for heart failure with reduced ejection fraction.
+- id: q073
+  question: What is the typical presentation and management of acute viral pharyngitis?
+- id: q074
+  question: Describe the screening recommendations for cervical cancer.
+- id: q075
+  question: List clinical features and management of obstructive sleep apnea.
+- id: q076
+  question: What are the common causes of secondary osteoporosis?
+- id: q077
+  question: What is the proper management of iron overdose in children?
+- id: q078
+  question: Outline the evaluation and initial management of chronic cough lasting more than eight weeks.
+- id: q079
+  question: Describe the antibiotic treatment of choice for bacterial meningitis in adults.
+- id: q080
+  question: What is the treatment approach for first-time uncomplicated diverticulitis?
+- id: q081
+  question: List potential adverse effects of long-term corticosteroid use.
+- id: q082
+  question: What are diagnostic criteria and management options for hyperlipidemia?
+- id: q083
+  question: Describe critical steps in the management of hypoglycemia in diabetic patients.
+- id: q084
+  question: What are the most common infectious causes of diarrhea in adults?
+- id: q085
+  question: Outline the management and prevention of urinary tract infections in women.
+- id: q086
+  question: What is the recommended treatment for scabies infestation?
+- id: q087
+  question: List risk factors and initial management of stroke due to hemorrhagic causes.
+- id: q088
+  question: What are the clinical manifestations and management of transient ischemic attack (TIA)?
+- id: q089
+  question: Describe the approach to the management of chronic kidney disease (CKD) stages 1-3.
+- id: q090
+  question: What is the recommended therapy for eosinophilic esophagitis?
+- id: q091
+  question: List common side effects and contraindications for metformin use.

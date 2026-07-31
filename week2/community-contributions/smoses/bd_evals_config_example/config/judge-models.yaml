@@ -1,0 +1,20 @@
+schema_version: 1
+models:
+  - id: judge_placeholder_1
+    model_id: MODEL_REPLACE_ME_1
+    description: Non-runnable example judge model.
+    default_inference_config:
+      maxTokens: 2048
+      temperature: 0
+  - id: judge_placeholder_2
+    model_id: MODEL_REPLACE_ME_2
+    description: Non-runnable example judge model.
+    default_inference_config:
+      maxTokens: 4096
+      temperature: 0
+  - id: judge_placeholder_3
+    model_id: MODEL_REPLACE_ME_3
+    description: Non-runnable example judge model.
+    default_inference_config:
+      maxTokens: 2048
+      temperature: 0

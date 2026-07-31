@@ -1,0 +1,18 @@
+# Report over the v2 judge run. Makes zero API calls.
+# Criteria are listed in the order the judge scores them, most mechanical first.
+datasets:
+  retrieval: retrieval-smoke-001
+  retrieval_judgments: retrieval-judgment-smoke-002
+output_dir: smoke-v2
+scoring:
+  retrieval_judgment:
+    parser: json
+    minimum: 1
+    maximum: 5
+    criteria:
+      - context_integrity
+      - signal_density
+      - answerability
+      - clinical_completeness
+      - medical_safety
+    comment_field: comments

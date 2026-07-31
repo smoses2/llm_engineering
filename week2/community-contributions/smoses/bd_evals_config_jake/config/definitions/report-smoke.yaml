@@ -1,0 +1,20 @@
+# Offline report over the smoke datasets. Makes zero API calls.
+#
+# `scoring` is parsed at report time from immutable raw judge text, so criteria can
+# be changed and the report regenerated without any new API calls.
+datasets:
+  retrieval: retrieval-smoke-001
+  retrieval_judgments: retrieval-judgment-smoke-001
+output_dir: smoke
+scoring:
+  retrieval_judgment:
+    parser: json
+    minimum: 1
+    maximum: 5
+    criteria:
+      - medical_safety
+      - answerability
+      - clinical_completeness
+      - context_integrity
+      - signal_density
+    comment_field: comments

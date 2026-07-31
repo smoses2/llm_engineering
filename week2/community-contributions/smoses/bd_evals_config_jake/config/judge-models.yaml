@@ -1,0 +1,8 @@
+schema_version: 1
+models:
+  - id: claude_haiku_4_5
+    model_id: us.anthropic.claude-haiku-4-5-20251001-v1:0
+    description: Claude Haiku 4.5.
+    default_inference_config:
+      maxTokens: 2048
+      temperature: 0

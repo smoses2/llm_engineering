@@ -1,0 +1,38 @@
+# Retrieval judgment example: judges saved retrieval artifacts via /ask.
+#
+# Calls = source artifacts x judge models x prompt variants x inference variants.
+# The judge sees only the question and the frozen retrieved context, never the
+# knowledge base or retrieval mode, so standard and rerank artifacts are judged
+# blind and compared later in the report.
+schema_version: 1
+test:
+  id: retrieval-judgment-example
+  type: retrieval_judgment
+source_dataset:
+  type: retrieval
+  id: retrieval-example
+judge_models:
+  source: ../judge-models.yaml
+selection:
+  judge_models:
+    include: [judge_placeholder_1]
+prompt_variants:
+  - id: clinical_v3
+    template:
+      system_instructions: prompts/retrieval-judge/system.md
+      user_message: prompts/retrieval-judge/user.md
+inference_variants:
+  - id: deterministic
+    inference_config:
+      maxTokens: 2048
+      temperature: 0
+api:
+  base_url_env: BD_API_BASE_URL
+  api_key_env: BD_API_KEY
+output:
+  dataset_id: retrieval-judgment-example
+execution:
+  concurrency: 5
+  continue_on_error: true
+  retries:
+    maximum_attempts: 3

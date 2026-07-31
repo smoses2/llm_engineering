@@ -1,0 +1,10 @@
+schema_version: 1
+questions:
+  - id: q001
+    question: What are the diagnostic criteria for major depressive disorder?
+  - id: q002
+    question: What is the first-line treatment for anaphylaxis?
+    rubric:
+      expected_answer: The answer should identify intramuscular epinephrine.
+      required_facts:
+        - State that epinephrine is first-line.

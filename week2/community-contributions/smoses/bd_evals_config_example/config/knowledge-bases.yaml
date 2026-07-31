@@ -1,0 +1,22 @@
+schema_version: 1
+knowledge_bases:
+  - id: kb_placeholder_1
+    knowledge_base_id: KB_REPLACE_ME_1
+    description: Example fixed-size Knowledge Base.
+    chunking:
+      strategy: fixed
+      size: 500
+      overlap: 100
+    supports_merge_eval: true
+  - id: kb_placeholder_2
+    knowledge_base_id: KB_REPLACE_ME_2
+    description: Example semantic Knowledge Base.
+    chunking:
+      strategy: semantic
+    supports_merge_eval: true
+  - id: kb_placeholder_3
+    knowledge_base_id: KB_REPLACE_ME_3
+    description: Example no-chunking Knowledge Base.
+    chunking:
+      strategy: none
+    supports_merge_eval: false

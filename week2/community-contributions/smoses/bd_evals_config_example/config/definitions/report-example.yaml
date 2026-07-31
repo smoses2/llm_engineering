@@ -1,0 +1,23 @@
+# Offline report example. Makes zero API calls.
+#
+# `scoring` is applied at report time to the immutable raw judge text, so criteria
+# can be corrected and the report regenerated without re-running any judge calls.
+# Each criterion becomes a retrieval_score_<name> CSV column; the total is computed
+# in code and any total reported by the judge is ignored.
+datasets:
+  retrieval: retrieval-example
+  retrieval_judgments: retrieval-judgment-example
+output_dir: latest
+scoring:
+  retrieval_judgment:
+    parser: json
+    minimum: 1
+    maximum: 5
+    criteria:
+      - context_integrity
+      - signal_density
+      - answerability
+      - clinical_completeness
+      - medical_safety
+    comment_field: comments
+    source_assessment_field: source_assessments

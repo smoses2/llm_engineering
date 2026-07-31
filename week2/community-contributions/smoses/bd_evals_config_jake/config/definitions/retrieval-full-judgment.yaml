@@ -1,0 +1,32 @@
+schema_version: 1
+test:
+  id: retrieval-full-judgment
+  type: retrieval_judgment
+source_dataset:
+  type: retrieval
+  id: retrieval-full-001
+judge_models:
+  source: ../judge-models.yaml
+selection:
+  judge_models:
+    include: [claude_haiku_4_5]
+prompt_variants:
+  - id: clinical_v3
+    template:
+      system_instructions: prompts/retrieval-judge/system.md
+      user_message: prompts/retrieval-judge/user.md
+inference_variants:
+  - id: deterministic
+    inference_config:
+      maxTokens: 2048
+      temperature: 0
+api:
+  base_url_env: BD_API_BASE_URL
+  api_key_env: BD_API_KEY
+output:
+  dataset_id: retrieval-full-judgment-001
+execution:
+  concurrency: 5
+  continue_on_error: true
+  retries:
+    maximum_attempts: 3

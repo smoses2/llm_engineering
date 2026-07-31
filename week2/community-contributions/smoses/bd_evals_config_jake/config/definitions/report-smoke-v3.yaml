@@ -1,0 +1,22 @@
+# Report over the v3 judge run. Makes zero API calls.
+#
+# The judge reports per-source relevance verdicts; source counts and the
+# relevant-source ratio are computed in code, not by the model. signal_density is
+# deliberately kept as a judge score so it can be checked against the computed ratio.
+datasets:
+  retrieval: retrieval-smoke-001
+  retrieval_judgments: retrieval-judgment-smoke-003
+output_dir: smoke-v3
+scoring:
+  retrieval_judgment:
+    parser: json
+    minimum: 1
+    maximum: 5
+    criteria:
+      - context_integrity
+      - signal_density
+      - answerability
+      - clinical_completeness
+      - medical_safety
+    comment_field: comments
+    source_assessment_field: source_assessments

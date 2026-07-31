@@ -1,0 +1,21 @@
+# Report over the standard-vs-rerank dataset. Makes zero API calls.
+#
+# Pivot the CSV on retrieval_mode to compare modes, and check effective_mode and
+# retrieval_fallback before trusting any rerank conclusion.
+datasets:
+  retrieval: retrieval-full-001
+  retrieval_judgments: retrieval-full-judgment-001
+output_dir: retrieval-full
+scoring:
+  retrieval_judgment:
+    parser: json
+    minimum: 1
+    maximum: 5
+    criteria:
+      - context_integrity
+      - signal_density
+      - answerability
+      - clinical_completeness
+      - medical_safety
+    comment_field: comments
+    source_assessment_field: source_assessments

@@ -1,0 +1,35 @@
+# Smoke retrieval run: prove the pipeline end to end at minimal cost.
+# Matrix = questions x knowledge_bases x modes x candidate_counts x result_counts
+#        = 3 x 5 x 1 x 1 x 1 = 15 calls.
+schema_version: 1
+test:
+  id: retrieval-smoke
+  type: retrieval
+questions:
+  source: ../questions.yaml
+knowledge_bases:
+  source: ../knowledge-bases.yaml
+selection:
+  questions:
+    include: [q001, q002, q003]
+  knowledge_bases:
+    include: [kb_fixed_500, kb_fixed_1024, kb_semantic_512, kb_semantic_1024, kb_none]
+retrieval:
+  modes: [standard]
+  candidate_counts: [20]
+  result_counts: [5]
+deployment:
+  label: merge-disabled
+  merge:
+    enabled: false
+    maximum_chunks_per_document: null
+api:
+  base_url_env: BD_API_BASE_URL
+  api_key_env: BD_API_KEY
+output:
+  dataset_id: retrieval-smoke-001
+execution:
+  concurrency: 5
+  continue_on_error: true
+  retries:
+    maximum_attempts: 3

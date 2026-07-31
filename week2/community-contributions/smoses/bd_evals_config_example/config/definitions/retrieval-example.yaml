@@ -1,0 +1,30 @@
+schema_version: 1
+test:
+  id: retrieval-example
+  type: retrieval
+questions:
+  source: ../questions.yaml
+knowledge_bases:
+  source: ../knowledge-bases.yaml
+selection:
+  knowledge_bases:
+    include: [kb_placeholder_1, kb_placeholder_2, kb_placeholder_3]
+retrieval:
+  modes: [standard, rerank]
+  candidate_counts: [20]
+  result_counts: [5]
+deployment:
+  label: merge-disabled-example
+  merge:
+    enabled: false
+    maximum_chunks_per_document: null
+api:
+  base_url_env: BD_API_BASE_URL
+  api_key_env: BD_API_KEY
+output:
+  dataset_id: retrieval-example
+execution:
+  concurrency: 5
+  continue_on_error: true
+  retries:
+    maximum_attempts: 3

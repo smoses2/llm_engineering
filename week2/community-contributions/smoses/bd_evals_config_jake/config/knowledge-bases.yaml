@@ -1,0 +1,43 @@
+# Knowledge Base catalog. Chunking values are descriptive provenance only; they are
+# never sent to the API. Units: fixed strategy uses size = tokens per chunk and
+# overlap = percent; semantic strategy uses size = maximum tokens per chunk.
+schema_version: 1
+knowledge_bases:
+  - id: kb_fixed_500
+    knowledge_base_id: AV0IEYJYTF
+    description: fixed-size 500
+    chunking:
+      strategy: fixed
+      size: 500
+      overlap: 20
+    supports_merge_eval: true
+  - id: kb_fixed_1024
+    knowledge_base_id: 1AFOXXA7OZ
+    description: fixed-size 1024
+    chunking:
+      strategy: fixed
+      size: 1024
+      overlap: 20
+    supports_merge_eval: true
+  - id: kb_semantic_512
+    knowledge_base_id: 060K6HN65X
+    description: semantic 512
+    chunking:
+      strategy: semantic
+      size: 512
+      similarity_percentile_threshold: 96
+    supports_merge_eval: true
+  - id: kb_semantic_1024
+    knowledge_base_id: FVVJSHNEZZ
+    description: semantic 1024
+    chunking:
+      strategy: semantic
+      size: 1024
+      similarity_percentile_threshold: 96
+    supports_merge_eval: true
+  - id: kb_none
+    knowledge_base_id: JK48DKF31C
+    description: no-chunking
+    chunking:
+      strategy: none
+    supports_merge_eval: false
